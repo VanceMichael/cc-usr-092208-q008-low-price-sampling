@@ -8,7 +8,10 @@
     "sample_id",
     "actors",
     "facts",
-    "constraints"
+    "constraints",
+    "risk_signals",
+    "replan_triggers",
+    "review_metrics"
   ],
   "properties": {
     "domain": {
@@ -38,6 +41,27 @@
       }
     },
     "constraints": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "risk_signals": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "replan_triggers": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "review_metrics": {
       "type": "array",
       "minItems": 2,
       "items": {
